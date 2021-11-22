@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+Hello World!
+
+I hope there will be more information here soon!

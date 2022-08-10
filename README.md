@@ -8,4 +8,4 @@ I don't know where to put this, so here is my list of useful links:
 
 # DSP
 ## Noise
-* Deriving how windowing impacts gaussian noise frequency phase and magnitude: https://radarsp.weebly.com/uploads/2/1/4/7/21471216/dft_of_noise.pdf
+* Deriving frequency response of a instantiation of a random process passed through a window: https://radarsp.weebly.com/uploads/2/1/4/7/21471216/dft_of_noise.pdf

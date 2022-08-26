@@ -6,6 +6,11 @@ I don't know where to put this, so here is my list of useful links:
 # PCA
 * Tutorial https://arxiv.org/pdf/1404.1100.pdf
 
+# Stats
+* Great website with lots of stats stuff: https://www.statlect.com/
+* Variance estimate of normal distribuition: https://www.statlect.com/fundamentals-of-statistics/variance-estimation#:~:text=Variance%20estimation%20is%20a%20statistical,estimator%20of%20the%20population%20variance.
+* Stdev estimate of stdev: https://stats.stackexchange.com/a/28567
+
 # DSP
 ## Random processes
 * Deriving frequency response of a instantiation of a random process passed through a window: https://radarsp.weebly.com/uploads/2/1/4/7/21471216/dft_of_noise.pdf

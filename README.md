@@ -14,6 +14,8 @@ I don't know where to put this, so here is my list of useful links:
 # DSP
 Really cool book about DSP: https://www.dspguide.com/
 
+Here is an article about random sampling: https://arxiv.org/pdf/1204.0839.pdf
+
 ## Wavelets
 * A guide about wavelet tranform (has 4 parts): https://ccrma.stanford.edu/~unjung/mylec/WTpart1.html
 

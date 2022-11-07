@@ -32,3 +32,4 @@ We could potentially estimate the autocorrelation function (e.g. through averagi
 # Electronics
 
 * This looks like a really cool electronics book: https://ultimateelectronicsbook.com/#introduction
+* Impedances, Thevenin can be used not only to model electrical systems: http://web.mit.edu/2.151/www/Handouts/Impedances.pdf

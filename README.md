@@ -28,3 +28,7 @@ Here is an article about random sampling: https://arxiv.org/pdf/1204.0839.pdf
 Some notes on estimating power spectrum density for random process:
 
 We could potentially estimate the autocorrelation function (e.g. through averaging) and then FFT that and get the PSD for the random process, however, it seems that direct calculations of periodograms and averaging them is the preferred method from a calculation standpoint.
+
+# Electronics
+
+* This looks like a really cool electronics book: https://ultimateelectronicsbook.com/#introduction

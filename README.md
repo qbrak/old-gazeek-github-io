@@ -18,6 +18,9 @@ Here is an article about random sampling: https://arxiv.org/pdf/1204.0839.pdf
 
 Here is an article about time-interleaved sampling: https://www.analog.com/en/analog-dialogue/articles/interleaving-adcs.html#:~:text=Time%20interleaving%20is%20a%20technique,of%20each%20individual%20data%20converter
 
+Correcting the distortion caused by window function: https://community.sw.siemens.com/s/article/window-correction-factors
+(however, coherent gain (a.k.a. DC gain) assumes that sum(win)!=1, if sum(win)=1, then coherent gain=1).
+
 ## Wavelets
 * A guide about wavelet tranform (has 4 parts): https://ccrma.stanford.edu/~unjung/mylec/WTpart1.html
 

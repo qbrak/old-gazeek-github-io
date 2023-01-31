@@ -21,6 +21,8 @@ Here is an article about time-interleaved sampling: https://www.analog.com/en/an
 Correcting the distortion caused by window function: https://community.sw.siemens.com/s/article/window-correction-factors
 (however, coherent gain (a.k.a. DC gain) assumes that sum(win)!=1, if sum(win)=1, then coherent gain=1).
 
+Book about wireless DSP processing: https://www.rle.mit.edu/sia/books/wireless-communications-signal-processing-perspectives/
+
 ## Wavelets
 * A guide about wavelet tranform (has 4 parts): https://ccrma.stanford.edu/~unjung/mylec/WTpart1.html
 

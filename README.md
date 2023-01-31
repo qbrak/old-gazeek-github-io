@@ -21,7 +21,13 @@ Here is an article about time-interleaved sampling: https://www.analog.com/en/an
 Correcting the distortion caused by window function: https://community.sw.siemens.com/s/article/window-correction-factors
 (however, coherent gain (a.k.a. DC gain) assumes that sum(win)!=1, if sum(win)=1, then coherent gain=1).
 
+# Wifi DSP
+
 Book about wireless DSP processing: https://www.rle.mit.edu/sia/books/wireless-communications-signal-processing-perspectives/
+
+Survey of wifi tech (and required theory): https://www.people.vcu.edu/~ebulut/COMST22_WiFi_Sensing_Survey.pdf
+
+Related to [CSI](https://en.wikipedia.org/wiki/Channel_state_information): [article](https://7fa7a724-a-62cb3a1a-s-sites.googlegroups.com/site/mdanishnisar/pubs/21_Robust_Channel_Est_Nisar_TSP_2010.pdf?attachauth=ANoY7cqzw5YcZj4oBRZHWPD6SUu4ZdjKmfpv89ch1vTEkTKc1ppFAWs690GM-ws7WSjUo5M2kyQJPA1pe-yt2sx8_lkuc7nQXIeDwZZbeFsUGtUQ2y3B5MWpv5IcyUwqwnHZYEY20SUSrm-5olD0-1Ijqqq1U9jvg1_qQ_T3x8--52-WxLwTF3f455xIF4fgzQVdO4vpndarl3kDYdATPbkznh23BKVk50VE9Rnj_nI2p-Vc2BwUeQT8mfs4bvvUVukpYrGAzFUi&attredirects=0)
 
 ## Wavelets
 * A guide about wavelet tranform (has 4 parts): https://ccrma.stanford.edu/~unjung/mylec/WTpart1.html

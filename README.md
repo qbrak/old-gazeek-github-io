@@ -46,3 +46,8 @@ We could potentially estimate the autocorrelation function (e.g. through averagi
 
 * This looks like a really cool electronics book: https://ultimateelectronicsbook.com/#introduction
 * Impedances, Thevenin can be used not only to model electrical systems: http://web.mit.edu/2.151/www/Handouts/Impedances.pdf
+
+## Electronics noise
+
+* Here is noise model for sampling on a capacitor: https://www.ttcenter.ir/ArticleFiles/ENARTICLE/3740.pdf
+* Here is a book about designing for low-noise circuits: https://www.pearl-hifi.com/06_Lit_Archive/14_Books_Tech_Papers/Motchenbacher_Connelly/Low-noise_Electronic_Design.pdf

@@ -3,6 +3,10 @@ Piotr Held's  website/blog
 
 I don't know where to put this, so here is my list of useful links:
 
+# Transforms/Complex analysis
+* Cool Rice university course (with recorded lectures) on Mathematical Methods from the Physics department:
+https://www.ruf.rice.edu/~baring/phys516/phys516_record.html
+
 # PCA
 * Tutorial https://arxiv.org/pdf/1404.1100.pdf
 

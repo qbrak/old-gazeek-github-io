@@ -14,6 +14,7 @@ https://www.ruf.rice.edu/~baring/phys516/phys516_record.html
 * Great website with lots of stats stuff: https://www.statlect.com/
 * Variance estimate of normal distribuition: https://www.statlect.com/fundamentals-of-statistics/variance-estimation#:~:text=Variance%20estimation%20is%20a%20statistical,estimator%20of%20the%20population%20variance.
 * Stdev estimate of stdev: https://stats.stackexchange.com/a/28567
+* Really cool probability course book: https://www.probabilitycourse.com/preface.php
 
 # DSP
 Really cool book about DSP: https://www.dspguide.com/

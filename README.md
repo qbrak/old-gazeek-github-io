@@ -58,3 +58,4 @@ We could potentially estimate the autocorrelation function (e.g. through averagi
 
 * Here is noise model for sampling on a capacitor: https://www.ttcenter.ir/ArticleFiles/ENARTICLE/3740.pdf
 * Here is a book about designing for low-noise circuits: https://www.pearl-hifi.com/06_Lit_Archive/14_Books_Tech_Papers/Motchenbacher_Connelly/Low-noise_Electronic_Design.pdf
+* Here is an article about flicker (1/f) noise: http://www.schmid-werren.ch/hanspeter/publications/2008crcbook.pdf

@@ -30,6 +30,8 @@ Correcting the distortion caused by window function: https://community.sw.siemen
 
 Zeropadding vs repeating signal to get more resolution: https://www.penwatch.net/cms/fft_sampling/
 
+Cool page about windows and their figures of merit: https://www.recordingblogs.com/wiki/processing-gain
+
 # Wifi DSP
 
 Book about wireless DSP processing: https://www.rle.mit.edu/sia/books/wireless-communications-signal-processing-perspectives/

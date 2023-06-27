@@ -63,6 +63,7 @@ We could potentially estimate the autocorrelation function (e.g. through averagi
 
 * This looks like a really cool electronics book: https://ultimateelectronicsbook.com/#introduction
 * Impedances, Thevenin can be used not only to model electrical systems: http://web.mit.edu/2.151/www/Handouts/Impedances.pdf
+* Sigme-delta non-idealities analysis: https://bmas.designers-guide.org/2002/papers/bmas02-koe.pdf
 
 ## Electronics noise
 

@@ -6,7 +6,8 @@ I don't know where to put this, so here is my list of useful links:
 Open source books (a LOT of them): https://www.intechopen.com/about-intechopen
 
 # Math
-* Terrence Tao's notes, he derives a Fourier Transform and talks about Lebesgue measures: https://terrytao.files.wordpress.com/2010/02/epsilon.pdf
+* Terrence Tao's notes from his blog, he derives a Fourier Transform and talks about Lebesgue measures: https://terrytao.files.wordpress.com/2010/02/epsilon.pdf
+* [Baumeister's](https://www.math.uni-frankfurt.de/~baumeist/) book on fixed points, metric projections, minimization (non-linear?) https://www.math.uni-frankfurt.de/~baumeist/Nonex-Kap1.pdf (manually need to change *.pdf to 1,2,3,4,5,7,8)
 
 
 # Transforms/Complex analysis

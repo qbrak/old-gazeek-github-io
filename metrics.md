@@ -1,6 +1,13 @@
-# Metrics, closeness and intuition
+# Distance, closeness and intuition
 
 ## Intro
+
+The purpose of this document is to explore the intuitive idea of a distance between two objects. More precisely, given set $X$ we will look at functions $f : X \times X \rightarrow V$, where $V$ is usually $[0, + \infty)$, and can be some space with "positive values" (whatever that means at thsi point). In an ideal world, we would find a perfect distance function for every possible situation, however, that is not possible, so the next best thing is to create a "toolbox" of distance functions that can be used for various scenarios.
+
+## When to distance?
+
+Distance functions arise whenever we want to optimize something, they show up when trying to find the best way 
+
 
 Every piece needs a target audience, it is very murky who the target audience is for me, but since I have been curious about these topics, I will say that the target audience is me, just from a few months past :). I will assume that you are somewhat familiar with metric spaces and topology but will provide some links to read-up on the topic.
 
@@ -8,9 +15,11 @@ This write-up is trying to achieve two goals:
 1. Show in which way the funcion $d:\mathbb{R}\times \mathbb{R} \rightarrow [0, +\infty]$, $d(x,y)=|x-y|^2$ even though is not a metric, does "act" like a metric in some sense.
 2. Explore ways in which we can play with metric-like functions to achieve a better separation of things we care about (increase their distance). - is this a thing? Maybe something about manipulating metrics to give different weight to things we care about more.
 
+
+
 ## Metrics
 
-Metrics are functions that tell us about the distance between different objects. There are additional properties added to the metrics to
+Metrics are one of the first distance functions that we are introduced to in the study of math. They do lead to very pretty theoremsthat Metrics are functions that tell us about the distance between different objects. There are additional properties added to the metrics to
 
 In information theory we might use metrics or other distance measures to describe how far objects are from each other[^2].
 
@@ -96,3 +105,12 @@ Big picture notes, and ideas:
 
 Other thoughts:
 If we can convert a pseudometric to a metric using metric identification, and uniform spaces are defined using pseudometrics on semivalue groups, does that not mean that we could define uniform spaces using semivalue groups on generalized metrics (and not on generalized semigroups)
+
+## Thoughts Dec 1st 2023
+
+So... the thing is the distance function/metric defines the space (how the space behaves), so we can use it (or maybe some other function or something else to define the space), but then the question is about the objective function, and not  **** the metric... so maybe this whole thing doesn't make sense???
+
+If the metric is there to define the space, and then we just optimize from $\mathbb{R}^n$, then what is the point? We can define the shape of the space however, and then we ?embed? the space in $\mathbb{R}^n$ ?
+
+I guess metric functions can be objective functions(right?), but when are they?
+When are metric balls convex  

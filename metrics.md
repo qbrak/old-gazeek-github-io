@@ -6,6 +6,8 @@ The purpose of this document is to explore the intuitive idea of a distance betw
 
 ## When to distance?
 
+Let's talk about two 
+
 Distance functions arise whenever we want to optimize something, they show up when trying to find the best way 
 
 
@@ -28,7 +30,7 @@ In information theory we might use metrics or other distance measures to describ
 
 Let's take a set $X$, then a metric is a funcion $d : X \times X \rightarrow [0, +\infty)$ that satisfies the properties[^4]:
 
-**(M1)** $~~d(x,y) = 0$ <br>
+**(M1)** $~~d(x,x) = 0$ <br>
 **(M2)** $~~d(x,y) \leq d(x,z) + d(z,y) $ (triangle inequality) <br>
 **(M3)** $~~d(x,y) = d(y,x)$ (symmetry) <br>
 **(M4)** $~~d(x,y) = 0 \implies x = y$ (separation)
@@ -114,3 +116,23 @@ If the metric is there to define the space, and then we just optimize from $\mat
 
 I guess metric functions can be objective functions(right?), but when are they?
 When are metric balls convex  
+
+## Thoughts Dec 2nd 2023
+
+Check what spaces are possible with the possible distance functions for instace directed graph..
+
+One idea for an example is looking at color distances in RGB/HSV or some color spaces since RGB is on a cube amd HSV is on a cylinder.
+
+HyperRogue discord about geometry.
+
+d(u, v) = ||u - v||
+
+||a + b|| <= ||a|| + ||b||
+
+d(a1,a2) = |x1-x2| + |y1-y2|
+
+One distinction for different types of objects, for instance:
+
+1. Finite sets (something like edges and graphss)
+    Can you differentiate on them?
+    I mean I guess you can

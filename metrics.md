@@ -2,7 +2,23 @@
 
 ## Intro
 
-The purpose of this document is to explore the intuitive idea of a distance between two objects. More precisely, given set $X$ we will look at functions $f : X \times X \rightarrow V$, where $V$ is usually $[0, + \infty)$, and can be some space with "positive values" (whatever that means at thsi point). In an ideal world, we would find a perfect distance function for every possible situation, however, that is not possible, so the next best thing is to create a "toolbox" of distance functions that can be used for various scenarios.
+The purpose of this document is to explore the intuitive idea of a distance between two objects. More precisely, given set $X$ we will look at functions $d : X \times X \rightarrow V$, where *usually* $V=[0, + \infty)$, and in general can be some space with "positive values" (which we will define at a later point). In math and engineering we can use the function $d$ either to impose a structure on set $X$ or as an objective function for some optimization problem. This article will categorize different distance functions $d$ based on their properties, and also explore what structure they induce.
+
+## Structure induced by distance
+
+For every distance function $d : X \times X \rightarrow V$ (again think $V=[0, + \infty)$) we can define balls:
+
+* Open ball: $~~B_r(a)=\{x \in X: d(a,x) < r\}$
+* Closed ball: $B_r^{\_}(a)=\{x \in X: d(a, x) \leq r \}$
+
+For example if $X=\mathbb{R}$, then $B_r(a)=(a-r,a+r)$, $B_r^{\_}(a)=[a-r,a+r]$.<br>
+Or if $X=\mathbb{R}^2$, then $B_r(a)$ is an open disk with a center $a=(x,y)$ where $x,y\in\mathbb{R}$.
+
+FIXME: write a couple words here about what is a topology and what is the a basis.
+FIXME: don't explain the consequences, but state that what you will be looking for is when certain distance functions generate the same basis set and thus the same topology.
+
+
+
 
 ## When to distance?
 
@@ -52,7 +68,7 @@ Additionally, there are real life situaions which use the notion of "distance" t
 To remedy this mathematicians have introduced multiple concepts to generalize metrics. Since they don't always agree on their naming convention, I will provide the [Wikipedia](https://en.wikipedia.org/wiki/Metric_space#Generalizations_of_metric_spaces) naming convention:
 * Metametrics: these drop (M1), thus sometimes $d(x,x)\neq 0$, for more [see here](https://en.wikipedia.org/wiki/Metric_space#Metametrics_or_partial_metrics).
 * Semimetrics: these ease (M2), one way this is done (sometimes called $k$-metric[^3]) is to change the triangle inequality to $d(x,y) \leq k \cdot (d(x,z) + d(z,y))$, where $k\in\mathbb{R}$. If $k=1$ we get back to metrics, if $k<1$ the definition does not make sense.
-* Quasimetrics: these drop (M3), that is the function does not have to symmetric, for example  the "distance these on Google Maps" metric.
+* Quasimetrics: these drop (M3), that is the function does not have to symmetric, for example  the "distance these on Google Maps" metric. You can define left-open balls or right open balls, and a topology using left-open balls.[^geom-prot-datasets]
 * Pseudometrics: these drop (M4), thus some points can be 0-distant even though they are different. It is easy to convert a pseudometric to a metric using [metric identification](https://en.wikipedia.org/wiki/Pseudometric_space#Metric_identification) using the equivalence relation $x \sim y \iff d(x,y)=0$.
 * Continuity spaces[^4]: These change the domain of $d$ from $[0, +\infty)$ to a value semigroup, and also sometimes drop (M3) and/or (M4), it can be shown that any topological space is a continuity space.
 
@@ -86,7 +102,7 @@ I want to see how Uniform Spaces show all this together nicely. Ie. show that al
 [^4]: Kopperman, R. (1988) All topologies come from generalized metrics. American Mathematical Monthly, 95, 89–97.
 
 [^5]: Inframetric, Round Trip Delay  https://citeseerx.ist.psu.edu/doc/10.1.1.113.6748
-
+[^geom-prot-dataset]: Stojmirovic, A. (2005) Ph.D thesis, [Quasi-metrics, Similarities and searches: aspects of geometry of protein datasets](https://arxiv.org/pdf/0810.5407.pdf)
 
 
 Other notes:

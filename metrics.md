@@ -2,22 +2,68 @@
 
 ## Intro
 
-The purpose of this document is to explore the intuitive idea of a distance between two objects. More precisely, given set $X$ we will look at functions $d : X \times X \rightarrow V$, where *usually* $V=[0, + \infty)$, and in general can be some space with "positive values" (which we will define at a later point). In math and engineering we can use the function $d$ either to impose a structure on set $X$ or as an objective function for some optimization problem. This article will categorize different distance functions $d$ based on their properties, and also explore what structure they induce.
+The purpose of this document is to explore the intuitive idea of a distance between two objects. More precisely, given set $X$ we will look at functions $d : X \times X \rightarrow V$, where *usually* $V=[0, + \infty)$, and in general can be some space with "positive values" (which we will define at a later point). In math and engineering we can use the function $d$ either to impose a structure on set $X$ or as an objective function for some optimization problem. This article will categorize different distance functions $d$ based on their properties, and also explore what topological structure they induce.
 
-## Structure induced by distance
+The structure of this article is to first discuss what roles distance functions play, next we will try to separarate them into different categories.
 
-For every distance function $d : X \times X \rightarrow V$ (again think $V=[0, + \infty)$) we can define balls:
+## Use of distance functions
+
+### Distance that defines structure
+
+For every distance function $d : X \times X \rightarrow V$, again think $V=[0, + \infty)$, we can define balls:
 
 * Open ball: $~~B_r(a)=\{x \in X: d(a,x) < r\}$
 * Closed ball: $B_r^{\_}(a)=\{x \in X: d(a, x) \leq r \}$
 
-For example if $X=\mathbb{R}$, then $B_r(a)=(a-r,a+r)$, $B_r^{\_}(a)=[a-r,a+r]$.<br>
-Or if $X=\mathbb{R}^2$, then $B_r(a)$ is an open disk with a center $a=(x,y)$ where $x,y\in\mathbb{R}$.
+For example if $X=\mathbb{R}$, then $B_r(a)=(a-r,a+r)$, an open interval, and $B_r^{\_}(a)=[a-r,a+r]$, a closed interval.<br>
+Or if $X=\mathbb{R}^2$, then $B_r(a)$ is an open disk with radius $r \in \mathbb{R}$ and center in point $a=(x,y)$ where $x,y\in \mathbb{R}$.
 
 FIXME: write a couple words here about what is a topology and what is the a basis.
 FIXME: don't explain the consequences, but state that what you will be looking for is when certain distance functions generate the same basis set and thus the same topology.
+FIXME: plug for "Topology without tears"
+
+### Distance in optimization problems
+
+Finding the best solution (one of many) to a problem, a.k.a. [mathematical optimization](https://en.wikipedia.org/wiki/Mathematical_optimization), starts with defining an objective function $f : A \rightarrow \mathbb{R}$ which we will either minimize or maximize. In many cases the objective function $f$ can be defined in terms of some distance funciton $d$.
+
+#### Map example
+For instance, when trying to find the fastest road between points $x$ and $y$ on a maps app, the set $A$ becomes the set of all possible paths between $x$ and $y$, and $f$ is the function that assigns the time travelled to each possible road. We could formalize this by stating that given a set of possible points on the map $P$ and the set of directly adjacent pairs:
+
+$$E=\{(x_i, x_j):\text{when }x_i\text{ and } x_j \text{have direct road}\}$$
+
+Next, we define:
+
+$$A=\{(x_1, x_2, \dotsc, x_k): x_1=x \wedge x_k=y \wedge (x_i, x_{i+1})\in E \wedge k\in \mathbb{N}\}$$
+
+and then $f$ is:
+
+$$ f((x_1, x_2, \dotsc,  x_k)) = \sum_{i=1}^{k-1}d(x_{i}, x_{i+1}) $$
+
+#### Machine learning example
+
+Another example is in [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning) algorithm, where for given model $M$ and input $X$ we try to minimize the distance between the expected output $Y(X)$ and the obtained output $\hat{Y}(X, M)$. In other words we have
+
+$$ f(M)=d(Y(X), ~\hat{Y}(X, M)) $$
+
+Here we find the best weights for model $M$ that minimizes the objective function $f$.
+
+## Structure of document
+
+We want to talk about: 
+1. TYpes of distances
+    1. metrics
+    1. less than metrics (maybe a quick what is what and then more discussion)
+        1. Applications
+    1. divergence
+    1. list of distance measures from conference
+1. Show which spaces create the same structure
+1. some metric theorems (including Banach fixed point in k-metric)
+1. 
 
 
+## Metrics
+
+FIXME: write that a "business metric" is not an mathematical metric and that it's just a number you can trak and hope it correlates with the goals you want, it's usualy not a distance function (it takes in 1 argument)
 
 
 ## When to distance?
@@ -33,9 +79,9 @@ This write-up is trying to achieve two goals:
 1. Show in which way the funcion $d:\mathbb{R}\times \mathbb{R} \rightarrow [0, +\infty]$, $d(x,y)=|x-y|^2$ even though is not a metric, does "act" like a metric in some sense.
 2. Explore ways in which we can play with metric-like functions to achieve a better separation of things we care about (increase their distance). - is this a thing? Maybe something about manipulating metrics to give different weight to things we care about more.
 
+## Types of distances
 
-
-## Metrics
+### Metrics
 
 Metrics are one of the first distance functions that we are introduced to in the study of math. They do lead to very pretty theoremsthat Metrics are functions that tell us about the distance between different objects. There are additional properties added to the metrics to
 

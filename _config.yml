@@ -20,8 +20,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   ramblings and be able to share it with others.
   Maybe its useful for someone, but I hope it will be fun for me :).
 domain: gazeek.github.io
-baseurl: /gazeek.github.io/ # the subpath of your site, e.g. /blog
+baseurl: / # the subpath of your site, e.g. /blog
 url: https://gazeek.github.io # the base hostname & protocol for your site, e.g. http://example.com
+# url: http://127.0.0.1:4000 # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  gazeek
 
 # Build settings
